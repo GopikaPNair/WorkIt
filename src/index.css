@@ -1,7 +1,63 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+/* Remove all default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #b4d4ee;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  border: 2px solid black;
+  background-color: #dff1fb;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #264e70;
+  margin-bottom: 20px;
+}
+
+.image-frame {
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 2px solid black; /* ✅ black outline for image box */
+}
+
+.main-image {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.start-btn {
+  background-color: #3f8ea5;
+  color: white;
+  border: 2px solid black; /* ✅ black outline */
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-family: 'Pixelify Sans', cursive; /* ✅ Pixelify font */
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #32738c;
 }
