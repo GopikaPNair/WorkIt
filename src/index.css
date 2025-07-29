@@ -62,3 +62,150 @@ html, body {
   transform: scale(1.1);         /* ✅ Zooms the button */
   transition: transform 0.1s; 
 }
+
+/* Remove shadow only in tasks page */
+.tasks-page .container {
+  box-shadow: none;
+}
+
+/* Task input row styling */
+.task-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.task-input-row input {
+  flex: 1;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  font-size: 1rem;
+  font-family: 'Pixelify Sans', cursive;
+}
+
+/* + button next to input */
+#addTaskBtn {
+  background-color: #264e70;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+  background-color: #1b3c52;
+}
+
+/* Task list below input */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task-list li {
+  background-color: #e6f7ff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 1rem;
+  border-left: 4px solid #264e70;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Top row container */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Date Box */
+.date-box {
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 160px;
+  text-align: center;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  font-family: 'Pixelify Sans', cursive;
+}
+
+#dayName {
+  font-size: 1.2rem;
+  color: #264e70;
+}
+
+#dateNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #264e70;
+}
+
+#monthName {
+  font-size: 1rem;
+  color: #264e70;
+}
+
+/* Progress Box */
+.progress-box {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.progress-label {
+  font-family: 'Pixelify Sans', cursive;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #264e70;
+}
+
+.progress-bar-container {
+  height: 20px;
+  width: 100%;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #264e70;
+  transition: width 0.3s ease;
+}
+
+.date-circle {
+  width: 65px;
+  height: 65px;
+  margin: 10px auto;
+  background-color: #264e70;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-circle span {
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Pixelify Sans', cursive;
+  font-weight: bold;
+}
